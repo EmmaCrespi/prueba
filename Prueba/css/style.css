@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&family=Signika:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+}
+
+nav,
+header,
+main
+ {width: 100vw;
+padding: 0 8.33vw;}
+
+section, video {width: 100%;}
+
+header {
+    height: 35vh;
+    text-align: center;
+}
+
+.mostrar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 19vh;
+    left: 0vw;
+    background-color: #6D6875;
+    width: 100vw;
+    padding: 2vw;
+}
+
+nav {
+    color: white;
+    background-color: #6D6875;
+    height: 10vh;
+    padding: 0 8.33vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div {
+    width: 24%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h1,
+header h3,
+header h1 {
+
+    line-height: 125%;
+    vertical-align: top;
+    font-size: 30px; }
+   
+    nav h1 {
+    animation-name: movimiento;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+ }
+
+
+@keyframes movimiento {
+    from{font-size: 30px;}
+    to {font-size: 35px;}
+}
+
+header h3 {
+    color: rgb(140, 106, 110);
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+main  section {
+    justify-content: space-between;
+    display: flex;
+    }
+    
+main section div { width: 45.83%; margin-bottom: 30px;}
+section div img {width: 100%;}
+
+main  section {
+justify-content: space-between;
+display: flex;
+}
+
+nav h1 {
+    font-weight: 500;
+    margin: 0;
+}
+
+header h1 {
+    font-family: 'Mulish', sans-serif;
+}
+
+a {
+    border-radius: 5%;
+    text-decoration: none;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: #6D6875;
+    padding: 25px;
+ }
+
+header p,
+header a {
+    font-size: 20px;
+}
+
+
+header a {
+    color: white;
+}
+
+header a {
+    background-color: #6D6875;
+    transition: background-color 1s 0s linear;
+}
+
+header:hover a {
+    background-color: rgb(140, 106, 110);
+}
+ 
